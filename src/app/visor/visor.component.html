@@ -1,0 +1,52 @@
+<div class="content">
+    <div>
+        Filtrar por:
+        <label>
+            <ng-autocomplete
+                    [data]="this.modelos"
+                    [searchKeyword]="'nombre'"
+                    [itemTemplate]="modeloBusquedaModel"
+                    [notFoundTemplate]="notFoundTemplate">
+            </ng-autocomplete>
+        </label>
+    </div>
+    <ng-template #modeloBusquedaModel let-modelo>
+        <img width="50px" [src]="modelo.fotoUrl"/><span [innerHTML]="modelo.nombre"></span>
+    </ng-template>
+
+    <ng-template #notFoundTemplate let-notFound>
+        <div [innerHTML]="notFound"></div>
+    </ng-template>
+
+
+    <div>
+        <p *ngIf="coches.length == 0">No hay coches a la venta.</p>
+        <table *ngIf="coches.length > 0">
+            <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+                <th>En venta desde</th>
+                <th>Precio</th>
+                <th>PVP</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tr *ngFor="let coche of coches">
+                <td><img width="50px" [src]="coche.modelo.fotoUrl"/></td>
+                <td>{{coche.modelo.marca.nombre}}</td>
+                <td>{{coche.modelo.nombre}}</td>
+                <td>{{coche.modelo.anyo}}</td>
+                <td>{{coche.inicioVenta | date:'MM-yyyy'}}</td>
+                <td>{{coche.precio | currency:'EUR':'symbol':undefined:'es'}}</td>
+                <td>{{coche.modelo.pvp | currency:'EUR':'symbol':undefined:'es'}}</td>
+                <td>
+                    <button>Rebajar</button>
+                    <button>Vendido</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
