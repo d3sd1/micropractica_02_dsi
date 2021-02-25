@@ -43,6 +43,4 @@ export class VisorComponent implements OnInit {
     marcarVendido(coche: Coche) {
         this.cochesMockService.marcarVendido(coche);
     }
-
-
 }

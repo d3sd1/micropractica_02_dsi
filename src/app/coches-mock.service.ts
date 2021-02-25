@@ -26,7 +26,7 @@ export class CochesMockService {
     // This should be fetched from an API ;) <- AVAILABLE CARS TO SELL, STOCK CARS
     private hardcodedCoches: Coche[] = [
         new Coche(1, this.hardcodedModelos[0], new Date('2018-04-01'), 5000),
-        new Coche(2, this.hardcodedModelos[1], new Date('2018-03-01'), 1200),
+        new Coche(2, this.hardcodedModelos[1], new Date('2018-03-01'), 1300),
         new Coche(3, this.hardcodedModelos[2], new Date('2018-03-01'), 3500),
         new Coche(4, this.hardcodedModelos[3], new Date('2018-03-01'), 4000)
     ];

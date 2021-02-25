@@ -22,12 +22,12 @@
             </tr>
             </thead>
             <tr *ngFor="let coche of cochesTabla" [ngClass]="{'hidden-car': coche.vendido}">
-                <td><img width="50px" [src]="coche.modelo.fotoUrl"/></td>
+                <td><img width="50px" appPlaceholderImagen [src]="coche.modelo.fotoUrl" alt="¡Sin foto!" #img/></td>
                 <td>{{coche.modelo.marca.nombre}}</td>
                 <td>{{coche.modelo.nombre}}</td>
                 <td>{{coche.modelo.anyo}}</td>
                 <td>{{coche.inicioVenta | date:'MM-yyyy'}}</td>
-                <td>{{coche.precio | currency:'EUR':'symbol':undefined:'es'}}</td>
+                <td cocheRecomendadaCompra [coche]="coche">{{coche.precio | currency:'EUR':'symbol':undefined:'es'}}</td>
                 <td>{{coche.modelo.pvp | currency:'EUR':'symbol':undefined:'es'}}</td>
                 <td>
                     <button (click)="rebajar(coche)">Rebajar</button>
