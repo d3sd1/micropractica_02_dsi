@@ -2,11 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b93e5d3d-e95e-4603-b750-054273df3a6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/marca.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/modelo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coches/renault_megane_2007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coches/renault_scenic_2007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coches/seat_ibiza_2003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/util/Constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/__ivy_ngcc__/fesm2015/angular-ng-autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/__ivy_ngcc__/fesm2015/angular-ng-autocomplete.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/angular-ng-autocomplete.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/angular-ng-autocomplete.d.ts.__ivy_ngcc_bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/angular-ng-autocomplete.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/angular-ng-autocomplete.metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/bundles/angular-ng-autocomplete.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/bundles/angular-ng-autocomplete.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/bundles/angular-ng-autocomplete.umd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/bundles/angular-ng-autocomplete.umd.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm2015/angular-ng-autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm2015/lib/autocomplete-lib.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm2015/lib/autocomplete-lib.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm2015/lib/autocomplete/autocomplete.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm2015/lib/autocomplete/highlight.pipe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm2015/public_api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm5/angular-ng-autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm5/lib/autocomplete-lib.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm5/lib/autocomplete-lib.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm5/lib/autocomplete/autocomplete.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm5/lib/autocomplete/highlight.pipe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/esm5/public_api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/fesm2015/angular-ng-autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/fesm2015/angular-ng-autocomplete.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/fesm5/angular-ng-autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/fesm5/angular-ng-autocomplete.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete-lib.component.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete-lib.component.d.ts.__ivy_ngcc_bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete-lib.component.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete-lib.module.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete-lib.module.d.ts.__ivy_ngcc_bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete-lib.module.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete/autocomplete.component.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete/autocomplete.component.d.ts.__ivy_ngcc_bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete/autocomplete.component.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete/highlight.pipe.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete/highlight.pipe.d.ts.__ivy_ngcc_bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/lib/autocomplete/highlight.pipe.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular-ng-autocomplete/public_api.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/coche.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/coche.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/coches-mock.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/coches-mock.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/visor/visor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/visor/visor.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/visor/visor.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/visor/visor.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/visor/visor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/visor/visor.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +118,24 @@
       <updated>1613923322108</updated>
       <workItem from="1613923326431" duration="636000" />
       <workItem from="1613933270270" duration="7000" />
-      <workItem from="1614027933989" duration="4785000" />
+      <workItem from="1614027933989" duration="5285000" />
+      <workItem from="1614251295459" duration="1630000" />
     </task>
+    <task id="LOCAL-00001" summary="pre-release para clase">
+      <created>1614033130081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614033130081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pre-release para clase" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre-release para clase" />
   </component>
 </project>

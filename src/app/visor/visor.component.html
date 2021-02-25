@@ -2,26 +2,13 @@
     <div>
         Filtrar por:
         <label>
-            <ng-autocomplete
-                    [data]="this.modelos"
-                    [searchKeyword]="'nombre'"
-                    [itemTemplate]="modeloBusquedaModel"
-                    [notFoundTemplate]="notFoundTemplate">
-            </ng-autocomplete>
+            <input type="text" [(ngModel)]="filterBy" (ngModelChange)="filterTable()" placeholder="(marca de coche)"/>
         </label>
     </div>
-    <ng-template #modeloBusquedaModel let-modelo>
-        <img width="50px" [src]="modelo.fotoUrl"/><span [innerHTML]="modelo.nombre"></span>
-    </ng-template>
-
-    <ng-template #notFoundTemplate let-notFound>
-        <div [innerHTML]="notFound"></div>
-    </ng-template>
-
 
     <div>
-        <p *ngIf="coches.length == 0">No hay coches a la venta.</p>
-        <table *ngIf="coches.length > 0">
+        <p *ngIf="cochesTabla.length == 0">No hay coches a la venta.</p>
+        <table *ngIf="cochesTabla.length > 0">
             <thead>
             <tr>
                 <th>Foto</th>
@@ -34,7 +21,7 @@
                 <th>Acciones</th>
             </tr>
             </thead>
-            <tr *ngFor="let coche of coches">
+            <tr *ngFor="let coche of cochesTabla" [ngClass]="{'hidden-car': coche.vendido}">
                 <td><img width="50px" [src]="coche.modelo.fotoUrl"/></td>
                 <td>{{coche.modelo.marca.nombre}}</td>
                 <td>{{coche.modelo.nombre}}</td>
@@ -43,8 +30,8 @@
                 <td>{{coche.precio | currency:'EUR':'symbol':undefined:'es'}}</td>
                 <td>{{coche.modelo.pvp | currency:'EUR':'symbol':undefined:'es'}}</td>
                 <td>
-                    <button>Rebajar</button>
-                    <button>Vendido</button>
+                    <button (click)="rebajar(coche)">Rebajar</button>
+                    <button (click)="marcarVendido(coche)">Vendido</button>
                 </td>
             </tr>
         </table>

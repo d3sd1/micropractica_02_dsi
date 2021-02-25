@@ -8,7 +8,6 @@ import { ErrorComponent } from './error/error.component';
 import {FormsModule} from '@angular/forms';
 import {CommonModule, registerLocaleData} from '@angular/common';
 import localeEs from '@angular/common/locales/es';
-import {AutocompleteLibModule} from 'angular-ng-autocomplete';
 
 // the second parameter 'fr' is optional
 registerLocaleData(localeEs, 'es');
@@ -23,7 +22,6 @@ registerLocaleData(localeEs, 'es');
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AutocompleteLibModule,
     CommonModule
   ],
   providers: [],
